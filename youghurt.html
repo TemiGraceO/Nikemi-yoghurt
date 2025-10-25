@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikemi Yoghurt</title>
+  <link rel="stylesheet" href="youghurt.css" />
+</head>
+<body>
+  <div class="up">
+    <header class="header">
+      <img src="images/logo.png" class="logo" alt="Nikemi Logo" />
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <section class="mid">
+      <div class="left">
+        <h1>Hi! Nikemi here.</h1>
+        <h2>Get your 100% natural Yoghurt</h2>
+        <p>Let your taste buds thank you...</p>
+        <button class="btn" onclick="scrollToOrder()">Order Now</button>
+      </div>
+
+      <div class="hero-img">
+        <img src="images/milk.png" class="milk" alt="Yoghurt splash">
+        <img src="images/milk.png" class="milk1" alt="Yoghurt splash">
+        <img src="images/her.png" class="her" alt="Model">
+      </div>
+    </section>
+  </div>
+
+  <section id="benefits" class="benefits">
+    <h2>Benefits</h2>
+    <div class="img">
+      <img src="images/rich.png" alt="Rich in nutrients">
+      <img src="images/natural.png" alt="Natural ingredients">
+      <img src="images/immune.png" alt="Strengthens immunity">
+    </div>
+
+    <div class="reason">
+      <div class="rich">
+        <h3>Rich in Nutrients</h3>
+        <p>Packed with calcium, protein, and essential vitamins for strong bones and overall health.</p>
+      </div>
+
+      <div class="Natural">
+        <h3>100% Natural Ingredients</h3>
+        <p>Made with fresh milk and no artificial preservatives; just pure goodness.</p>
+      </div>
+
+      <div class="Affordable">
+        <h3>Strengthens Immunity</h3>
+        <p>Helps build a stronger immune system with beneficial bacteria and nutrients.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="get">
+    <h2>Order</h2>
+    <form>
+      <input type="text" id="whatsapp" placeholder="Your Whatsapp Number" required>
+      <input type="number" id="quantity" placeholder="Quantity [₦1200 each]" required>
+      <p>Total: ₦<span id="total">0</span></p>
+      <p>Send Payment to: <strong>702 667 0330 (Nikemi - Opay)</strong></p>
+      <label for="image">Upload receipt:</label>
+      <input type="file" id="image" name="image" required>
+      <button type="button" onclick="showPopup(event)" class="btn1">Order</button>
+    </form>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>Thank you! You will be redirected to Whatsapp shortly...</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Copyright © Gracie</p>
+  </footer>
+
+  <script src="youghurt.js"></script>
+</body>
+</html>
