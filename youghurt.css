@@ -285,7 +285,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .burger { display: flex; position: absolute; right: 5%; top: 1.5rem; margin-top: 120px;}
+  .burger { display: flex; position: absolute; right: 5%;}
 
   nav {
     position: absolute;
